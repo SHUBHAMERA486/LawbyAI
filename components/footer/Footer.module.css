@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+.FooterCon{
+    height: 330px;
+    width: 100%;
+    background-color: rgb(41,41,41);
+    display: flex;
+    flex-direction: column;
+
+}
+.FooterCon div{
+    display: flex;
+    flex-direction: row;
+}
+
+.rightSec{
+    width: 50%;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+   
+
+    
+}
+.rightSec div{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.rightSec div div{
+    font-size: 21px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.rightSec div p{
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 17px;
+    margin-left: 30px;
+    color: rgb(210, 211, 212);
+}
+.icon{
+    margin-top: 20px;
+    margin-right: 10px;
+    display: inline;
+}
+
+.divider{
+    height: 1px;
+    margin-top: 40px;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+}
+.copyright{
+    color: #cbcbcb;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 30px;
+ 
+}
+
+@media screen and (max-width: 400px) {
+    .FooterCon{
+        height: 470px;
+        width: 100%;
+        background-color: rgb(41,41,41);
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .FooterCon div{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightSec{
+        width: 100%;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+       
+    
+        
+    }
+  }

@@ -1,0 +1,36 @@
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 20px;
+    color: rgb(59, 71, 55);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.FAQContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40px;
+    margin: 10px 30px ;
+    gap: 10px;
+    box-shadow: 4px 4px 6px rgba(70, 105, 88, 0.101);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.answers {
+    transition: 0.6s;
+}
+
+
+
+.Question {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(42, 61, 46);
+}

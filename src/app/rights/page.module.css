@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.chatbox{
+    height: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.opp{
+  width: 100px;
+  height: 40px;
+}
+.langBox{
+  width: 100%;
+  height: 50px;
+}
+.langBox div{
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.langBox div label{
+  margin-right: 7px;
+  font-size: 16px;
+}
+.langselect{
+  width: 100px;
+  height: 30px;
+}
+.btn-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .btn-color-mode-switch {
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+  }
+  .btn{
+    background-color: rgb(53, 53, 53);
+    width: 100%;
+    float: right;
+    font-size: 19px;
+    margin-top: 20px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #fff;
+     margin-left: 10px;
+
+    
+    
+  }
+  .btn:hover{
+    background-color: #000000;
+  }
+  
+  .btn-color-mode-switch > label.btn-color-mode-switch-inner {
+    margin: 0px;
+    width: 180px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 26px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+      /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
+    display: block;
+  }
+  
+  .btn-color-mode-switch > label.btn-color-mode-switch-inner:before {
+    content: attr(data-on);
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    top: 7px;
+    right: 20px;
+    color: #ffffff;
+  }
+  
+  .btn-color-mode-switch > label.btn-color-mode-switch-inner:after {
+    content: attr(data-off);
+    width: 80px;
+    height: 25px;
+    background: #fff;
+    border-radius: 26px;
+    position: absolute;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    left: 2px;
+    top: 2px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 6px -2px #111;
+    padding: 5px 0px;
+    color: #222;
+    font-weight: 600;
+  }
+  
+  .btn-color-mode-switch input[type="checkbox"] {
+    cursor: pointer;
+    width: 80px;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+  }
+  
+  .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner {
+    background-color: #000000;
+  }
+  
+  .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after {
+    content: attr(data-on);
+    left: 95px;
+  }
+  
+  .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before {
+    content: attr(data-off);
+    right: auto;
+    left: 20px;
+  }
+
+
+.container{
+    /* border: 2px solid red; */
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.reply{
+  /* border: 2px solid red; */
+  width: 100%;
+  
+  }
+  .inputboxneo{
+    /* border: 3px solid red; */
+    width: 100vh;
+    display: flex;
+   position:relative;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    z-index: +2;
+    flex-direction: column;
+    
+  }
+  .inputboxneo div{
+    width: 80%;
+    
+  }
+
+  
+  .ldsripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+
+  .ldsripple div {
+    position: absolute;
+    border: 4px solid rgb(0, 254, 202);;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .ldsripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    4.9% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    5% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+
+  .fullPage{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ansBox{
+    width: 80vh;
+    min-height: 200px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid rgb(133, 133, 133);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    
+    padding: 10px;
+  }
+  .texta{
+    text-align: start;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 60px;
+    color: rgb(67, 67, 67);
+    font-family: Poppins;
+    margin-bottom: 5px;
+  }
+.lawTemp{
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  display: flex;
+}
+
+.lawTemp img{
+  height: 80%;
+}
+  .texta p{
+    width: 84%;
+
+  }
+  .recom{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .text{
+    text-align: start;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Poppins;
+    margin-bottom: 20px;
+  }
+  .text p{
+    width: 84%;
+
+  }
+
+  .textBox{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .os{
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+    float: left;
+    height: 10%;
+    margin-bottom: 10px;
+  }
+  .input {
+    display: flex;
+     position:relative;
+    max-width: 100%; /* Increased max-width for a longer input box */
+  width: 80%;
+  height: 80px;
+    padding: 12px;
+    margin-bottom:2px ;
+    resize: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.822);
+    outline: none;
+    color: dimgray;
+    /* border:2px solid red; */
+  }
+  .micBox{
+    width: 10%;
+    background-color: aqua;
+    height: 100%;
+  }
+  .input:invalid {
+    animation: justshake 0.3s forwards;
+    color: red;
+  }
+  
+  
+  @keyframes justshake {
+    25% {
+      transform: rotate(5deg);
+    }
+  
+    50% {
+      transform: rotate(-5deg);
+    }
+  
+    75% {
+      transform: rotate(5deg);
+    }
+  }
+  
